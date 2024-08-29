@@ -11,7 +11,7 @@ export default {
     };
   },
   async mounted() {
-    //const { text } = await (await fetch("/api/HttpTriggerTest?name=test")).json();
+    const aaa = await (await fetch("/api/HttpTriggerTest?name=test")).json();
     const text = await fetch("/api/HttpTriggerTest?name=test");
     this.message = text;
   }
